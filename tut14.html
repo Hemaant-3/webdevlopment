@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css selector</title>
+    <style>
+        p{
+            /* element selector */
+            border: 2px solid aqua;
+        }
+        #first {
+            /* targated by id */
+            color: red;
+            background-color: antiquewhite;
+        }
+
+        .bgcla {
+            /* targeted by class. */
+            color: blue;
+            background-color: aquamarine;
+        }
+
+        footer,
+        span {
+            /* targeted by grouping of elements */
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="first">THis is the first paragraph</p>
+    <p id="second" class="bgcla redelement">THis is the second paragraph</p>
+    <p>THis is the third paragraph</p>
+    <div>
+        <p> this is another paragraph inside div to demonstrate the css selector
+        </p>
+        <span>this is span.</span>
+    </div>
+    <footer>
+        this is footer
+    </footer>
+</body>
+
+</html>

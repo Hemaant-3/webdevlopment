@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alignment</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        * {
+
+        }
+        body{
+            font-family: 'Ubuntu', sans-serif;
+        }
+        .container{
+            background-color: rgb(176, 238, 251);
+            width: 900px;
+            border: 3px solid purple;
+            margin:33px  auto;
+        }
+        .item{
+            border: 3px solid grey;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(188, 212, 248);
+        }
+        #fruits{
+            float: left;
+            width: 48%;
+        }
+        #computer{
+            float: right;
+            width: 48%;
+        }
+        #stationary{
+            /* float: left; */
+            clear: both;
+            /* clear: right; */
+            width: 98%;
+        }
+        p h3{
+            /* text-align: left;
+            text-align: right;
+            text-align: center; */
+            text-align: justify;
+        }
+        h1{
+            margin:23px auto;
+            width: 455px;
+        }
+
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruits" class="item">
+            <h3>fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt possimus minus dignissimos beatae distinctio blanditiis praesentium, explicabo rem atque nobis id eveniet nam sint error omnis, veritatis assumenda commodi quis!</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt possimus minus dignissimos beatae distinctio blanditiis praesentium, explicabo rem atque nobis id eveniet nam sint error omnis, veritatis assumenda commodi quis!</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>stationary</h3>
+            <p id="stationaryspara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt possimus minus dignissimos beatae distinctio blanditiis praesentium, explicabo rem atque nobis id eveniet nam sint error omnis, veritatis assumenda commodi quis!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste sint debitis deleniti corporis ducimus? Animi cum sed ullam error vitae?
+            </p>
+        </div>
+        <div id="grocey" class="item">
+            <h3>stationary</h3>
+            <p id="groceryspara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt possimus minus dignissimos beatae distinctio blanditiis praesentium, explicabo rem atque nobis id eveniet nam sint error omnis, veritatis assumenda commodi quis!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste sint debitis deleniti corporis ducimus? Animi cum sed ullam error vitae?
+            </p>
+        </div>
+    </div>
+</body>
+</html>
