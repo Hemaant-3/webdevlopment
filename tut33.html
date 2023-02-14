@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after psuedo selector</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+        }
+        header::before{
+            background: url("https://source.unsplash.com/random/1920x1080");
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.3;
+            
+
+        }
+    
+        section{
+            display: flex;
+            margin: 3px 230px;
+            flex-direction: column;
+            height: 344px;
+            /* border: 2px solid red; */
+            align-items: center;
+            justify-content: center;
+        }
+        /* section::before{
+            content: "This is content";
+        } */
+        .navigation{
+            font-size: 20px;
+            display: flex;
+        }
+        li{
+            list-style: none;
+            padding: 20px 23px;
+        }
+        h1{
+            font-size: 4rem;
+        }
+        p{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h1>Welcome to coding world</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium saepe aut ut, rerum veniam architecto maxime perspiciatis asperiores tempora voluptatibus temporibus molestias id exercitationem pariatur at reprehenderit et. Neque, accusamus.</p>
+        </section>
+        <hr>
+</body>
+</html>

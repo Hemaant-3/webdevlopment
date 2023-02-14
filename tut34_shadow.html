@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+            
+        }
+        .card
+        {
+            padding: 23px 12px;
+            border: 2px solid red;
+         background-color: burlywood;
+         padding: 23px 12px;
+         margin: 23px 12px;
+         /* boxshadow: offset-x, offset-y, blur-radius, spread-radius color */
+         /* box-shadow: 12px 10px 5px green; */
+         /* box-shadow: 12px 10px 5px -1px green; spread radius */
+         /* box-shadow: -7px -5px 10px 5px rgba(108, 206, 236, 0.3); */
+         box-shadow: inset 3px 5px green;
+         box-shadow: 3px 5px green, 4px 6px red;
+        }
+        h1{
+            /* text-shadow: 2px 2px white; */
+            text-shadow: 2px 3px 2px white;
+        }
+        </style>
+</head>
+<body>
+<div class="container">
+    <div class="card" id="card-1"><h1>This is C++ course</h1><p>
+        I have started C++ course which does not mean we stop this course. we will continue this course to compeletion. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut qui placeat ut, earum quisquam corporis non delectus perspiciatis deleniti adipisci laudantium. Facilis dolor rem at animi, dignissimos hic ducimus incidunt saepe natus doloribus delectus!</p></div>
+    <div class="card" id="card-2"><h1>This is HTML course</h1><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut qui placeat ut, earum quisquam corporis non delectus perspiciatis deleniti adipisci laudantium. Facilis dolor rem at animi, dignissimos hic ducimus incidunt saepe natus doloribus delectus!</p></div>
+    <div class="card" id="card-3"><h1>card3</h1><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut qui placeat ut, earum quisquam corporis non delectus perspiciatis deleniti adipisci laudantium. Facilis dolor rem at animi, dignissimos hic ducimus incidunt saepe natus doloribus delectus!</p></div>
+</div>
+</body>
+
+</html>

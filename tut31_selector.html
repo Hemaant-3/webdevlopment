@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selector</title>
+    <style>
+h1{
+    background-color: red;
+    text-align: center;
+    font-weight: bold;
+
+}
+/* div li p{
+    color: yellow;
+    background-color: green;
+    font-weight: bold;
+} */
+
+/* affected direct child of div */
+/* div > p{ 
+    color: yellow;
+    background-color: green;
+    font-weight: bold;
+} */
+
+/* affected next sibling of div */
+div + p{ 
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 133, 200);
+   
+}
+    </style>
+</head>
+<body>
+        <h1>More on selectors</h1>
+        <div class="container">
+            <div class="class">
+                <ul>
+                    <li class="item"><p>This is another paragraph inside li</p></li>
+                <li>This will not affected</li>    
+                </ul>
+                <p>This is a paragraph</p>
+            </div>
+            <p>This is another paragraph</p>
+        </div>
+        <p>This is outermost paragraph</p>
+</body>
+</html>
