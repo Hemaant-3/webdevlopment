@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+   scroll-behavior: smooth;
+}
  /* CSS Variables */
  :root{
 --navbar-height: 59px
@@ -24,7 +27,7 @@
  #navbar{
    display: flex;
    align-items: center;
-   position: relative;
+   position: sticky;
    top: 0px;
     }
  #navbar ul{
@@ -98,9 +101,10 @@
 #services .box{
    border: 2px solid brown;
    padding: 34px;
-   margin: 3px 6px;
+   margin: 2px 21px;
    border-radius: 28px;
    background:#f2f2f2;
+   margin-bottom: 20px;
 }
 #services .box img{
    height: 160px;
@@ -136,11 +140,12 @@
 }
 .center{
    text-align: center;
+   
 }
 
 /* clients section */
 #client-section{
-height: 344px;
+/* position: relative;  */
 }
 #client-section::before{
 content: "";
@@ -165,7 +170,7 @@ padding: 34px;
 
 /* Contact section */
 #contact{
-   position: relative;
+   /* position: relative; */
 }
 #contact::before{
 content: "";
@@ -175,4 +180,31 @@ height: 100%;
 z-index: -1;
 opacity: 0.7;
 background: url(https://cdn.pixabay.com/photo/2022/01/12/18/51/contact-us-6933645_1280.jpg) no-repeat center center/cover;
+}
+
+footer{
+   background-color: black;
+   color: white;
+   padding: 9px 20px;
+}
+
+#contact-box input,
+#contact-box textarea{
+   width: 100%;
+   padding: 0.5rem;
+   border-radius: 9px;
+   font-size: 1.1rem;
+}
+#contact-box{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-bottom: 34px;
+}
+#contact-box form{
+   width: 40%;
+}
+#contact-box label{
+   font-family: 'Bree Serif', serif;
+font-size: 1.3rem;
 }
